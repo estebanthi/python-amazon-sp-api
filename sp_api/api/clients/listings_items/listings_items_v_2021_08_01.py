@@ -156,7 +156,7 @@ class ListingsItems_V_2021_08_01(Client):
         return self._request(
             path,
             query=query,
-            body=body,
+            body=body["body"],
             method=method,
             _type=ListingsItemSubmissionResponse,
         )
