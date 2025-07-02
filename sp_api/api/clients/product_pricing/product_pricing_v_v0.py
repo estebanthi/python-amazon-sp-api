@@ -290,7 +290,7 @@ class ProductPricing_V_v0(Client):
         return self._request(
             path,
             query=query,
-            body=body,
+            body=body["getListingOffersBatchRequestBody"],
             method=method,
             _type=GetListingOffersBatchResponse,
         )
