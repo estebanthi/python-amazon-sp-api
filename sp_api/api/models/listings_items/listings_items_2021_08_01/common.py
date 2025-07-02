@@ -1013,6 +1013,8 @@ class StatusEnum(str, Enum):
     ACCEPTED = "ACCEPTED"  # The listings submission was accepted for processing.
     INVALID = "INVALID"  # The listings submission was not valid and was not accepted for processing.
     VALID = "VALID"  # The listings submission was valid. Only returned when the `mode` is `VALIDATION_PREVIEW`.
+    BUYABLE = "BUYABLE"
+    DISCOVERABLE = "DISCOVERABLE"
 
 
 """
