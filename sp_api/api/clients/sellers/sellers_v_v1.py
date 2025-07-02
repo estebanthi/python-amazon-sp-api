@@ -61,15 +61,9 @@ class Sellers_V_v1(Client):
         """
         path = kwargs.pop("path")
         method = kwargs.pop("method")
-        request = args[0]
-        if not isinstance(request, None):
-            request = None(**kwargs)
-        path, body, query = request.create_request(path, self.marketplace_id)
 
         return self._request(
             path,
-            query=query,
-            body=body,
             method=method,
             _type=GetMarketplaceParticipationsResponse,
         )
