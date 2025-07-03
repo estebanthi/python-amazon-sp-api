@@ -102,7 +102,7 @@ class Reports_V_2021_06_30(Client):
         path, body, query = request.create_request(path, self.marketplace_id)
 
         return self._request(
-            path, query=query, body=body, method=method, _type=CreateReportResponse
+            path, query=query, body=body["body"], method=method, _type=CreateReportResponse
         )
 
     @overload
