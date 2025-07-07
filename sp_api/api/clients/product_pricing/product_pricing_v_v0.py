@@ -243,7 +243,7 @@ class ProductPricing_V_v0(Client):
         return self._request(
             path,
             query=query,
-            body=body,
+            body=body["getItemOffersBatchRequestBody"],
             method=method,
             _type=GetItemOffersBatchResponse,
         )
