@@ -286,6 +286,7 @@ class ProductPricing_V_v0(Client):
         if not isinstance(request, GetListingOffersBatchRequest):
             request = GetListingOffersBatchRequest(**kwargs)
         path, body, query = request.create_request(path, self.marketplace_id)
+        body = body["getListingOffersBatchRequestBody"]
 
         return self._request(
             path,
